@@ -1,0 +1,480 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 50px 0;
+  text-align: center;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.descr-reset {
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  line-height: inherit;
+}
+.title-reset {
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  font-size: inherit;
+  line-height: inherit;
+}
+.section-title {
+  font-size: 45px;
+  line-height: normal;
+  color: #c4c4c4;
+  margin-bottom: 40px;
+  animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Блок 1: Промо */
+.title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 72px;
+  line-height: normal;
+  animation: slideIn 1s forwards;
+}
+.promo {
+  position: relative;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.promo-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  align-items: center;
+}
+.promo-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.product-img {
+  max-width: 50%;
+}
+.product-features {
+  flex: 1;
+  max-width: 50%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.btn-order {
+  display: inline-flex;
+  padding: 10px 20px;
+  background-color: #f04;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  align-self: center;
+  text-align: center;
+}
+@media (max-width: 400px) {
+  .promo-info {
+    gap: 15px;
+  }
+}
+
+/* Блок 2: Состав продукта */
+.gradient-bg {
+  background: linear-gradient(to right, #000000, #8d8c8c);
+}
+.block2-descr {
+  font-size: 20px;
+  line-height: normal;
+  color: rgb(192, 193, 189);
+}
+.composition-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  gap: 20px;
+}
+.ingredients-left,
+.ingredients-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.ingredient {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.ingredient-img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ingredient-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.product-center img {
+  max-width: 50%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .ingredient-img {
+    max-width: 150px;
+  }
+}
+@media (max-width: 480px) {
+  .ingredient-img {
+    max-width: 100px;
+  }
+}
+
+/* Блок 3: Отзывы */
+.carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.reviews .carousel {
+  display: flex;
+  overflow: hidden;
+  cursor: grab;
+}
+.review {
+  flex: 0 0 100%;
+  max-width: 100%;
+  background-color: inherit;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease;
+}
+
+.review-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.review-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.review-content h3 {
+  margin: 0 0 10px;
+}
+.review-content p {
+  margin: 0;
+}
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+.carousel-controls button {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+.carousel-pagination {
+  margin-top: 20px;
+}
+.carousel-pagination .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #bbb;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.carousel-pagination .dot.active {
+  background: #717171;
+}
+.block3-descr {
+  font-size: 16px;
+  line-height: normal;
+  color: #c4c4c4;
+}
+.user-title {
+  font-size: 25px;
+  line-height: normal;
+  color: #c4c4c4;
+}
+.carousel-controls {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+.carousel-controls .prev,
+.carousel-controls .next {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+.carousel-controls .prev:hover,
+.carousel-controls .next:hover {
+  background-color: #f04;
+  color: #fff;
+}
+
+@media (max-width: 570px) {
+  .carousel-controls {
+    display: none;
+  }
+}
+
+/* Блок 4: Промо */
+.promo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.promo-content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.promo-img {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+.promo-text {
+  width: 50%;
+  text-align: left;
+}
+.promo-description {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: #c4c4c4;
+}
+.promo-features {
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  display: flex;
+  gap: 20px;
+  color: #c4c4c4;
+}
+.promo-features li {
+  font-size: 18px;
+}
+.btn-order {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f04;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 450px) {
+  .promo-content {
+    flex-direction: column;
+  }
+  .promo-img,
+  .promo-text {
+    width: 100%;
+  }
+}
+ /* Блок 5: Форма заказа */
+.order-form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.order-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.timer {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #f04;
+  animation: timer-animation 1s infinite alternate;
+}
+@keyframes timer-animation {
+  0% {
+    color: #f04;
+  }
+  50% {
+    color: #ff7e5f;
+  }
+  100% {
+    color: #f04;
+  }
+}
+.order-content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.order-form-wrapper {
+  width: 50%;
+  min-height: 200px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+.product-info {
+  width: 50%;
+  text-align: center;
+}
+.order-product-img {
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.old-price {
+  font-size: 18px;
+  text-decoration: line-through;
+  margin-bottom: 10px;
+}
+.new-price {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #f04;
+  animation: price-animation 1s infinite alternate;
+}
+@keyframes price-animation {
+  0% {
+    color: #f04;
+  }
+  50% {
+    color: #ff7e5f;
+  }
+  100% {
+    color: #f04;
+  }
+}
+.order-form {
+  display: flex;
+  flex-direction: column;
+}
+.form-group {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+.form-input {
+  width: 96%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.form-input:focus + .tooltip {
+  display: block;
+}
+.tooltip {
+  display: none;
+  position: absolute;
+  top: -20px;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.btn-order {
+  padding: 10px 20px;
+  background-color: #f04;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .order-product-img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .order-content {
+    flex-direction: column;
+  }
+  .order-form-wrapper,
+  .product-info {
+    width: 100%;
+  }
+}

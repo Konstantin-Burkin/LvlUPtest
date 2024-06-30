@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LevelUp</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <!-- Блок 1: Промо -->
+    <section class="promo">
+      <video autoplay muted loop class="promo-video">
+        <source src="./img/background_video.mp4" type="video/mp4" />
+        Ваш браузер не поддерживает видео.
+      </video>
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="title title-reset">LevelUp</h1>
+          <div class="promo-info">
+            <img src="./img/prod.png" alt="Product" class="product-img" />
+            <ul class="product-features descr-reset">
+              <li>Характеристика 1 Lorem ipsum dolor sit amet...</li>
+              <li>Характеристика 2 Lorem ipsum dolor sit amet...</li>
+              <li>Характеристика 3 Lorem ipsum dolor sit amet...</li>
+            </ul>
+          </div>
+          <a href="#order-form" class="btn-order btn-reset">Заказать</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок 2: Состав продукта -->
+    <section class="composition gradient-bg">
+      <div class="container">
+        <h2 class="section-title title-reset">Состав продукта</h2>
+        <div class="composition-content descr-reset">
+          <div class="ingredients-left">
+            <div class="ingredient">
+              <div class="ingredient-img">
+                <img src="./img/ingridients.jpg" alt="Ingredient 1" />
+              </div>
+              <p class="block2-descr descr-reset">Ингредиент 1</p>
+            </div>
+            <div class="ingredient">
+              <div class="ingredient-img">
+                <img src="./img/ingridients.jpg" alt="Ingredient 2" />
+              </div>
+              <p class="block2-descr descr-reset">Ингредиент 2</p>
+            </div>
+            <div class="ingredient">
+              <div class="ingredient-img">
+                <img src="./img/ingridients.jpg" alt="Ingredient 3" />
+              </div>
+              <p class="block2-descr descr-reset">Ингредиент 3</p>
+            </div>
+          </div>
+          <div class="product-center">
+            <img src="./img/prod.png" alt="Product" />
+          </div>
+          <div class="ingredients-right">
+            <div class="ingredient">
+              <div class="ingredient-img">
+                <img src="./img/ingridients.jpg" alt="Ingredient 4" />
+              </div>
+              <p class="block2-descr descr-reset">Ингредиент 4</p>
+            </div>
+            <div class="ingredient">
+              <div class="ingredient-img">
+                <img src="./img/ingridients.jpg" alt="Ingredient 5" />
+              </div>
+              <p class="block2-descr descr-reset">Ингредиент 5</p>
+            </div>
+            <div class="ingredient">
+              <div class="ingredient-img">
+                <img src="./img/ingridients.jpg" alt="Ingredient 6" />
+              </div>
+              <p class="block2-descr descr-reset">Ингредиент 6</p>
+            </div>
+          </div>
+        </div>
+        <a href="#order-form" class="btn-order btn-reset">Заказать</a>
+      </div>
+    </section>
+
+    <!-- Блок 3: Отзывы -->
+    <section class="reviews gradient-bg">
+      <div class="container">
+        <h2 class="section-title title-reset">Отзывы</h2>
+        <div class="carousel-wrapper">
+          <div class="reviews carousel">
+            <div class="review">
+              <img src="./img/user.png" alt="User1" class="review-img" />
+              <div class="review-content">
+                <h3 class="user-title title-reset">Вася Баг</h3>
+                <p class="block3-descr descr-reset">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                  natoque penatibus et magnis dis parturient montes, nascetur
+                  ridiculus mus. Donec quam felis,
+                </p>
+              </div>
+            </div>
+            <div class="review">
+              <img src="./img/user.png" alt="User2" class="review-img" />
+              <div class="review-content">
+                <h3 class="user-title title-reset">Саша Документ</h3>
+                <p class="block3-descr descr-reset">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                  natoque penatibus et magnis dis parturient montes, nascetur
+                  ridiculus mus. Donec quam felis,
+                </p>
+              </div>
+            </div>
+            <div class="review">
+              <img src="./img/user.png" alt="User3" class="review-img" />
+              <div class="review-content">
+                <h3 class="user-title title-reset">Петя Скрипт</h3>
+                <p class="block3-descr descr-reset">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                  natoque penatibus et magnis dis parturient montes, nascetur
+                  ridiculus mus. Donec quam felis,
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <button class="prev">←</button>
+            <button class="next">→</button>
+          </div>
+          <div class="carousel-pagination">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок 4: Промо -->
+    <section class="promo-section gradient-bg">
+      <div class="container">
+        <div class="promo-content">
+          <img
+            src="./img/doctor.png"
+            alt="Person with Product"
+            class="promo-img"
+          />
+          <div class="promo-text">
+            <p class="promo-description">
+              Описание продукта. Lorem ipsum dolor sit amet...
+            </p>
+            <ul class="promo-features">
+              <li>Характеристика 1 Lorem ipsum dolor sit amet...</li>
+              <li>Характеристика 2 Lorem ipsum dolor sit amet...</li>
+              <li>Характеристика 3 Lorem ipsum dolor sit amet...</li>
+            </ul>
+            <a href="#order-form" class="btn-order">Заказать</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок 5: Форма заказа -->
+    <section id="order-form" class="order-form-section gradient-bg">
+      <div class="container">
+        <h2 class="section-title">LevelUp</h2>
+        <div id="timer" class="timer">30:00</div>
+        <div class="order-content">
+          <div class="order-form-wrapper">
+            <form class="order-form">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  class="form-input"
+                  placeholder="Ваше имя"
+                  autocomplete="off"
+                />
+                <div class="tooltip">Пример: Иван Иванов</div>
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="phone"
+                  class="form-input"
+                  placeholder="Ваш телефон"
+                />
+                <div class="tooltip">Пример: 87777777777</div>
+              </div>
+              <button type="submit" class="btn-order">Заказать</button>
+            </form>
+          </div>
+          <div class="product-info">
+            <p class="old-price">1000 руб</p>
+            <p class="new-price">500 руб</p>
+            <img src="./img/prod.png" alt="Product" class="order-product-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
